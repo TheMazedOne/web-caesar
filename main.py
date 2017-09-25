@@ -46,11 +46,11 @@ def encrypt():
     r = int(r)
     t = request.form['text']
     c = rotate_string(t,r)
-    d  = "<h1>" + c + "</h1>"
+    d  =  c
     return form.format(d)
 
 @app.route("/")
 def index():
     
-    return form.format()
+    return form.format("")
 app.run()
